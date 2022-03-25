@@ -1,1 +1,61 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arekusu's Website</title>
+    <link rel="icon" href="img/anime-profile-pictures-70.png" />
+
+    <style>
+        *{
+            background-color: black;
+            color: white;
+        }
+        a, #discord-tag {
+            color: pink;
+            text-decoration: none;
+        }
+        a:hover, #discord-tag:hover {
+            text-shadow: -1px 1px 8px pink;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #profile-pic {
+            height: 100px;
+            position: relative;
+            left: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey, I am <span style="color: pink;">Arekusu</span></h1>
+    <img src="img/anime-profile-pictures-70.png" id="profile-pic">
+    <h2>About me:</h2>
+    <span>Linux newbie but already fell in love with this OS.</span>
+    <ul>
+        <li>Name: Alex</li>
+        <li>Age: 17</li>
+        <li>Hobbys: IT, Anime</li>
+    </ul>
+    <ul>
+        <li>If you think this Website is ugly - <a href="http://motherfuckingwebsite.com/">It's minimal</a></li>
+    </ul>
+    <h2>You can contact me here:</h2>
+    <ul>
+        <li>Discord: <span onclick="copyToClipboard('Arekusu#2922')" id="discord-tag">Arekusu#2922</span></li>
+        <li>E-mail: <a href="mailto:alex@arekusu.tk">alex@arekusu.tk</a></li>
+    </ul>
+
+    <h5>Going to add more content over time.</h5>
+
+</body>
+
+<script>
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text);
+        alert('Copied text to clipboard.')
+    }
+</script>
+</html>
